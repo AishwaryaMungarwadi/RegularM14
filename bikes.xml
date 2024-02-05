@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <parameter name="Driver" value="Chrome"/>
+  <groups>
+  	<run>
+  		<include name="regression"></include>
+  	</run>
+  </groups>
+  
+ 
+  
+    <classes>
+      <class name="TestNgBatchGroup.Bmw"/>
+      <class name="TestNgBatchGroup.Honda"/>
+      <class name="TestNgBatchGroup.Ducati"/>
+      <class name="TestNgBatchGroup.Ktm"/>
+      <class name="TestNgBatchGroup.RoyalEnfield"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
