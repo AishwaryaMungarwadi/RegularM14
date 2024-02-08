@@ -31,6 +31,7 @@ public class action_contextclk {
 			System.out.println("Program is correct");
 			driver.close();
 		}
+		//driver.close();
 		
 	}
 

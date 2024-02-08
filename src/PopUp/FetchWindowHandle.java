@@ -47,7 +47,6 @@ public class FetchWindowHandle {
 		driver.switchTo().window(dws);
 		driver.close();
 		
-		//driver.close();
 	}
 
 }

@@ -27,6 +27,7 @@ public class UseWindowHandle {
 		a.moveToElement(books).keyDown(Keys.SHIFT).click().build().perform();
 		
 		Set<String> child = driver.getWindowHandles();
+		System.out.println("Both window handles :: " +child);
 		child.remove(dws);
 		System.out.println("Child "+child);
 		
