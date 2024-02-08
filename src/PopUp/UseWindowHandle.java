@@ -34,15 +34,9 @@ public class UseWindowHandle {
 		for (String string : child) {
 			
 			driver.switchTo().window(string);
-			
-			/*if(!string.contains(dws))
-			{
-				driver.switchTo().window(string);
-				System.out.println(driver.getCurrentUrl());
-			
-			}*/
-			
 		}
+		driver.close();
+		driver.switchTo().Window(dws);
 		System.out.println(driver.getWindowHandle());
 	}
 }
